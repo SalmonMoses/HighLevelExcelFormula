@@ -1,0 +1,3 @@
+@test_macro($a) := MAX($a, 2) if error 0
+
+1 + @test_macro(3)

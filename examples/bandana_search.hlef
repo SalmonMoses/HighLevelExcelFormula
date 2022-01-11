@@ -1,0 +1,26 @@
+@current_bandana := left(E2)
+@points := G2
+@expected_bandana :=
+    if (@points > 'Переход'!$D$12)
+        'Переход'!$B$13
+    elif (@points > 'Переход'!$D$11)
+        'Переход'!$B$12
+    elif (@points > 'Переход'!$D$10)
+        'Переход'!$B$11
+    elif (@points > 'Переход'!$D$9)
+        'Переход'!$B$10
+    elif (@points > 'Переход'!$D$8)
+        'Переход'!$B$9
+    elif (@points > 'Переход'!$D$7)
+        'Переход'!$B$8
+    elif (@points > 'Переход'!$D$6)
+        'Переход'!$B$7
+    else
+        'Переход'!$B$6
+    end
+
+if (@current_bandana < left(@expected_bandana))
+    @expected_bandana
+else
+    ""
+end

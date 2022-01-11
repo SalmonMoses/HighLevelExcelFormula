@@ -1,0 +1,5 @@
+if (A1 = B1)
+    A1 / B2 if error "error!!!!!11!!"
+else
+    10.2e10
+end
